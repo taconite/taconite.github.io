@@ -1,0 +1,140 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <title>Shaofei Wang</title>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="Shaofei Wang">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Arvo|Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+    </head>
+    <body>
+        <div class="section">
+            <div class="title">
+                <span> Shaofei Wang </span>
+            </div>
+            <div class="row">
+                <div class="image" id="profile-photo">
+                    <a>
+                    <img alt="Profile photo" src="figures/me.jpeg" />
+                    </a>
+                </div>
+                <div class="content">
+                    <p>
+                        I am a PhD student at
+                        <a href=https://ethz.ch/en.html>
+                        ETH Zurich </a>,
+                        co-advised by 
+                        <a href=https://inf.ethz.ch/people/person-detail.MjYyNzgw.TGlzdC8zMDQsLTg3NDc3NjI0MQ==.html> Prof. Siyu Tang</a>
+                        and <a href=http://www.cvlibs.net/> Prof. Andreas Geiger</a>.
+                        My research topic is computer vision, specifically in building controllable
+                        neural implicit representations for human bodies with clothes. I am also interested
+                        in differentiable combinatorial optimization and its application in computer vision.
+                        Before I came to ETH, I worked as a researcher in <a href=http://kordinglab.com/> Kording Lab</a>
+                        at University of Pennsylvania. Even before that, I worked as a senior system engineer
+                        at the autonomous driving group of Baidu.
+                        I got my Master's degree from
+                        <a href=https://uci.edu/>University of California, Irvine</a>
+                        under supervision of 
+                        <a href=https://www.ics.uci.edu/~fowlkes/> Prof. Charless Fowlkes</a>
+                    </p>
+                    <p style="text-align:center">
+                        <span class="icon">
+                            <a href=mailto:shaofei.wang@inf.ethz.ch>
+                                <i class="fa fa-envelope-square fa-2x" aria-hidden="true"></i>
+                            </a>
+                        </span>
+                        <span class="icon">
+                            <a href=https://scholar.google.com/citations?user=iz6gEKcAAAAJ&hl=en>
+                            <i class="ai ai-google-scholar-square ai-2x"></i>
+                            </a> 
+                        </span>
+                        <span class="icon">
+                            <a href=https://github.com/taconite>
+                               <i class="fa fa-github-square fa-2x" aria-hidden="true"></i>
+                            </a>
+                        </span>
+                    </p>
+                </div>
+            </div>
+            <div class="title">
+                <span>News</span>
+            </div>
+            <ul class=news_item>
+                <li><span class="news-date">28.09.2021:</span><span class="news-text"> Our paper <a href=https://neuralbodies.github.io/metavatar/>MetaAvatar: Learning Animatable Clothed Human Models from Few Depth Images</a> is accepted to NeurIPS 2021! Code and data will be available soon.
+                <li><span class="news-date">21.06.2021:</span><span class="news-text"> Code and pre-trained models of PTF have been released! We also include pre-trained models that work on monocular depth images. Please check our <a href="https://github.com/taconite/PTF">github repository</a> for details.
+                <li><span class="news-date">01.03.2021:</span><span class="news-text"> Our paper <a href=https://taconite.github.io/PTF/website/PTF.html>Locally Aware Piecewise Transformation Fields for 3D Human Mesh Registration</a>
+                is accepted to CVPR 2021! Code and pre-trained models will be available soon.
+                <li><span class="news-date">01.09.2020:</span><span class="news-text"> Started PhD study at <a href=https://ethz.ch/en.html>ETH Zurich</a>.
+            </ul>
+            <div class="title">
+                <span>Publications</span>
+            </div>
+            <!-- start publication list --><div class="row paper"><div class="image"><img src="teasers/PTF.png" alt="Locally Aware Piecewise Transformation Fields for 3D Human Mesh Registration" /></div><div class="content"><div class="paper-title"><a href="https://taconite.github.io/PTF/website/PTF.html">Locally Aware Piecewise Transformation Fields for 3D Human Mesh Registration</a></div><div class="conference">Computer Vision and Pattern Recognition (CVPR), 2021</div><div
+                        class="authors"><strong class="author">Shaofei Wang</strong>, <a href="http://www.cvlibs.net/" class="author">Andreas Geiger</a>, <a href="https://inf.ethz.ch/people/person-detail.MjYyNzgw.TGlzdC8zMDQsLTg3NDc3NjI0MQ==.html" class="author">Siyu Tang</a></div><div class="links"><a href="#" data-type="Short" data-index="0">Abstract</a> <a href="https://taconite.github.io/PTF/website/PTF.html" data-type="Long">Project page</a> <a href="https://arxiv.org/abs/2104.08160" data-type="Short">Paper</a> <a href="https://github.com/taconite/PTF">Code</a> <a href="#" data-index="4" data-type="Short">Bibtex</a><div class="link-content" data-index="0"> Registering point clouds of dressed humans to parametric human models is a challenging task in computer vision. Traditional approaches often rely on heavily engineered pipelines that require accurate manual initialization of human poses and tedious post-processing. More recently, learning-based methods are proposed in hope to automate this process. We observe that pose initialization is key to accurate registration but existing methods often fail to provide accurate pose initialization. One major obstacle is that, despite recent effort on rotation representation learning in neural networks, regressing joint rotations from point clouds or images of humans is still very challenging. To this end, we propose novel piecewise transformation fields (PTF), a set of functions that learn 3D translation vectors to map any query point in posed space to its correspond position in rest-pose space. We combine PTF with multi-class occupancy networks, obtaining a novel learning-based framework that learns to simultaneously predict shape and per-point correspondences between the posed space and the canonical space for clothed human. Our key insight is that the translation vector for each query point can be effectively estimated using the point-aligned local features; consequently, rigid per bone transformations and joint rotations can be obtained efficiently via a least-square fitting given the estimated point correspondences, circumventing the challenging task of directly regressing joint rotations from neural networks. Furthermore, the proposed PTF facilitate canonicalized occupancy estimation, which greatly improves generalization capability and results in more accurate surface reconstruction with only half of the parameters compared with the state-of-the-art. Both qualitative and quantitative studies show that fitting parametric models with poses initialized by our network results in much better registration quality, especially for extreme poses.
+                        </div><div class="link-content" data-index="4"><pre>@inproceedings{PTF:CVPR:2021,
+    author = {Shaofei Wang and Andreas Geiger and Siyu Tang},
+    title = {Locally Aware Piecewise Transformation Fields for 3D Human Mesh Registration},
+    booktitle = {Conference on Computer Vision and Pattern Recognition (CVPR)},
+    year = {2021}
+}</pre></div></div></div></div><!-- end publication list -->
+        <!-- Javascript for showing and hiding the abstract and bibtex -->
+        <script type="text/javascript">
+            document.querySelectorAll(".links").forEach(function (p) {
+                p.addEventListener("click", function (ev) {
+                    // Make sure that the click is coming from a link
+                    if (ev.target.nodeName != "A") {
+                        return;
+                    }
+
+                    // Find the index of the div to toggle or return
+                    var i = ev.target.dataset["index"];
+                    if (i == undefined) {
+                        return;
+                    }
+
+                    // Make sure to remove something else that was displayed
+                    // and toggle the current one
+                    Array.prototype.forEach.call(
+                        ev.target.parentNode.children,
+                        function (sibling) {
+                            // We don't care about links etc
+                            if (sibling.nodeName != "DIV") {
+                                return;
+                            }
+
+                            // Hide others
+                            if (sibling.dataset["index"] != i) {
+                                sibling.style.display = "none";
+                            }
+
+                            // toggle the correct one
+                            else {
+                                if (sibling.style.display != "block") {
+                                    sibling.style.display = "block";
+                                } else {
+                                    sibling.style.display = "none";
+                                }
+                            }
+                        }
+                    );
+                    ev.preventDefault();
+                });
+            });
+        </script>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143288088-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-143288088-1');
+        </script>
+    </body>
+</html>
