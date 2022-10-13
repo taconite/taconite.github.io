@@ -70,7 +70,7 @@
                 <span>News</span>
             </div>
             <ul class=news_item>
-                <li><span class="news-date">03.07.2022:</span><span class="news-text"> Two papers accepted to <a href=https://eccv2022.ecva.net/>ECCV 2022</a>! Stay tuned for more details.
+                <li><span class="news-date">03.07.2022:</span><span class="news-text"> Two papers accepted to <a href=https://eccv2022.ecva.net/>ECCV 2022</a>!
                 <li><span class="news-date">06.12.2021:</span><span class="news-text"> Code and pre-trained models of MetaAvatar have been released! Please check our <a href="https://neuralbodies.github.io/metavatar/">project page</a> for details.
                 <li><span class="news-date">28.09.2021:</span><span class="news-text"> Our paper <a href=https://neuralbodies.github.io/metavatar/>MetaAvatar: Learning Animatable Clothed Human Models from Few Depth Images</a> is accepted to NeurIPS 2021! Code and data will be available soon.
                 <li><span class="news-date">21.06.2021:</span><span class="news-text"> Code and pre-trained models of PTF have been released! We also include pre-trained models that work on monocular depth images. Please check our <a href="https://github.com/taconite/PTF">github repository</a> for details.
@@ -81,22 +81,142 @@
             <div class="title">
                 <span>Publications</span>
             </div>
-            <!-- start publication list --><div class="row paper"><div class="image"><img src="teasers/MetaAvatar.jpeg" alt="MetaAvatar: Learning Animatable Clothed Human Models from Few Depth Images" /></div><div class="content"><div class="paper-title"><a href="https://neuralbodies.github.io/metavatar/">MetaAvatar: Learning Animatable Clothed Human Models from Few Depth Images</a></div><div class="conference">Neural Information Process Systems (NeurIPS), 2021</div><div
-                        class="authors"><strong class="author">Shaofei Wang</strong>, <a href="https://markomih.github.io/" class="author">Marko Mihajlovic</a>, <a href="https://qianlim.github.io/" class="author">Qianli Ma</a>, <a href="http://www.cvlibs.net/" class="author">Andreas Geiger</a>, <a href="https://inf.ethz.ch/people/person-detail.MjYyNzgw.TGlzdC8zMDQsLTg3NDc3NjI0MQ==.html" class="author">Siyu Tang</a></div><div class="links"><a href="#" data-type="Short" data-index="0">Abstract</a> <a href="https://neuralbodies.github.io/metavatar/" data-type="Long">Project page</a> <a href="https://openreview.net/forum?id=Q-PA3D1OsDz" data-type="Short">Paper</a> <a href="https://github.com/taconite/MetaAvatar-release">Code</a> <a href="#" data-index="4" data-type="Short">Bibtex</a><div class="link-content" data-index="0">In this paper, we aim to create generalizable and controllable neural signed distance fields (SDFs) that represent clothed humans from monocular depth observations. Recent advances in deep learning, especially neural implicit representations, have enabled human shape reconstruction and controllable avatar generation from different sensor inputs. However, to generate realistic cloth deformations from novel input poses, watertight meshes or dense full-body scans are usually needed as inputs. Furthermore, due to the difficulty of effectively modeling pose-dependent cloth deformations for diverse body shapes and cloth types, existing approaches resort to per-subject/cloth-type optimization from scratch, which is computationally expensive. In contrast, we propose an approach that can quickly generate realistic clothed human avatars, represented as controllable neural SDFs, given only monocular depth images. We achieve this by using meta-learning to learn an initialization of a hypernetwork that predicts the parameters of neural SDFs. The hypernetwork is conditioned on human poses and represents a clothed neural avatar that deforms non-rigidly according to the input poses. Meanwhile, it is meta-learned to effectively incorporate priors of diverse body shapes and cloth types and thus can be much faster to fine-tune, compared to models trained from scratch. We qualitatively and quantitatively show that our approach outperforms state-of-the-art approaches that require complete meshes as inputs while our approach requires only depth frames as inputs and runs orders of magnitudes faster. Furthermore, we demonstrate that our meta-learned hypernetwork is very robust, being the first to generate avatars with realistic dynamic cloth deformations given as few as 8 monocular depth frames. 
-                        </div><div class="link-content" data-index="4"><pre>@inproceedings{MetaAvatar:NeurIPS:2021,
-    author = {Shaofei Wang and Marko Mihajlovic and Qianli Ma and Andreas Geiger and Siyu Tang},
-    title = {MetaAvatar: Learning Animatable Clothed Human Models from Few Depth Images},
-    booktitle = {Conference on Neural Information Processing Systems (NeurIPS)},
-    year = {2021}
-}</pre></div></div></div></div><!-- end publication list -->
-            <!-- start publication list --><div class="row paper"><div class="image"><img src="teasers/PTF.png" alt="Locally Aware Piecewise Transformation Fields for 3D Human Mesh Registration" /></div><div class="content"><div class="paper-title"><a href="https://taconite.github.io/PTF/website/PTF.html">Locally Aware Piecewise Transformation Fields for 3D Human Mesh Registration</a></div><div class="conference">Computer Vision and Pattern Recognition (CVPR), 2021</div><div
-                        class="authors"><strong class="author">Shaofei Wang</strong>, <a href="http://www.cvlibs.net/" class="author">Andreas Geiger</a>, <a href="https://inf.ethz.ch/people/person-detail.MjYyNzgw.TGlzdC8zMDQsLTg3NDc3NjI0MQ==.html" class="author">Siyu Tang</a></div><div class="links"><a href="#" data-type="Short" data-index="0">Abstract</a> <a href="https://taconite.github.io/PTF/website/PTF.html" data-type="Long">Project page</a> <a href="https://arxiv.org/abs/2104.08160" data-type="Short">Paper</a> <a href="https://github.com/taconite/PTF">Code</a> <a href="#" data-index="4" data-type="Short">Bibtex</a><div class="link-content" data-index="0"> Registering point clouds of dressed humans to parametric human models is a challenging task in computer vision. Traditional approaches often rely on heavily engineered pipelines that require accurate manual initialization of human poses and tedious post-processing. More recently, learning-based methods are proposed in hope to automate this process. We observe that pose initialization is key to accurate registration but existing methods often fail to provide accurate pose initialization. One major obstacle is that, despite recent effort on rotation representation learning in neural networks, regressing joint rotations from point clouds or images of humans is still very challenging. To this end, we propose novel piecewise transformation fields (PTF), a set of functions that learn 3D translation vectors to map any query point in posed space to its correspond position in rest-pose space. We combine PTF with multi-class occupancy networks, obtaining a novel learning-based framework that learns to simultaneously predict shape and per-point correspondences between the posed space and the canonical space for clothed human. Our key insight is that the translation vector for each query point can be effectively estimated using the point-aligned local features; consequently, rigid per bone transformations and joint rotations can be obtained efficiently via a least-square fitting given the estimated point correspondences, circumventing the challenging task of directly regressing joint rotations from neural networks. Furthermore, the proposed PTF facilitate canonicalized occupancy estimation, which greatly improves generalization capability and results in more accurate surface reconstruction with only half of the parameters compared with the state-of-the-art. Both qualitative and quantitative studies show that fitting parametric models with poses initialized by our network results in much better registration quality, especially for extreme poses.
-                        </div><div class="link-content" data-index="4"><pre>@inproceedings{PTF:CVPR:2021,
-    author = {Shaofei Wang and Andreas Geiger and Siyu Tang},
-    title = {Locally Aware Piecewise Transformation Fields for 3D Human Mesh Registration},
-    booktitle = {Conference on Computer Vision and Pattern Recognition (CVPR)},
-    year = {2021}
-}</pre></div></div></div></div><!-- end publication list -->
+            <!-- start publication list -->
+            <div class="row paper">
+                <div class="image">
+                    <img src="teasers/ARAH_sq.gif" alt="ARAH: Animatable Volume Rendering of Articulated Human SDFs" />
+                </div>
+                <div class="content">
+                    <div class="paper-title">
+                	<a href="https://neuralbodies.github.io/arah/">ARAH: Animatable Volume Rendering of Articulated Human SDFs</a>
+                    </div>
+                    <div class="conference">European Conference on Computer Vision (ECCV), 2022</div>
+                    <div class="authors">
+                        <strong class="author">Shaofei Wang</strong>, <a href="https://katjaschwarz.github.io/" class="author">Katja Schwarz</a>, <a href="http://www.cvlibs.net/" class="author">Andreas Geiger</a>, <a href="https://inf.ethz.ch/people/person-detail.MjYyNzgw.TGlzdC8zMDQsLTg3NDc3NjI0MQ==.html" class="author">Siyu Tang</a>
+                    </div>
+                    <div class="links">
+                        <a href="#" data-type="Short" data-index="0">Abstract</a>
+                        <a href="https://neuralbodies.github.io/arah/" data-type="Long">Project page</a>
+                        <a href="https://drive.google.com/file/d/10yCrdOadwKNiDQBni23_W03ZwVafkfCJ/view" data-type="Short">Paper</a>
+                        <a href="https://github.com/taconite/arah-release">Code</a>
+                        <a href="#" data-index="4" data-type="Short">Bibtex</a>
+                        <div class="link-content" data-index="0">
+                            Combining human body models with differentiable rendering has recently enabled animatable avatars of clothed humans from sparse sets of multi-view RGB videos. While state-of-the-art approaches achieve a realistic appearance with neural radiance fields (NeRF), the inferred geometry often lacks detail due to missing geometric constraints. Further, animating avatars in out-of-distribution poses is not yet possible because the mapping from observation space to canonical space does not generalize faithfully to unseen poses. In this work, we address these shortcomings and propose a model to create animatable clothed human avatars with detailed geometry that generalize well to out-of-distribution poses. To achieve detailed geometry, we combine an articulated implicit surface representation with volume rendering. For generalization, we propose a novel joint root-finding algorithm for simultaneous ray-surface intersection search and correspondence search. Our algorithm enables efficient point sampling and accurate point canonicalization while generalizing well to unseen poses. We demonstrate that our proposed pipeline can generate clothed avatars with high-quality pose-dependent geometry and appearance from a sparse set of multi-view RGB videos. Our method achieves state-of-the-art performance on geometry and appearance reconstruction while creating animatable avatars that generalize well to out-of-distribution poses beyond the small number of training poses. 
+                        </div>
+                        <div class="link-content" data-index="4">
+<pre>
+@InProceedings{ARAH:ECCV:2022,
+  title = {ARAH: Animatable Volume Rendering of Articulated Human SDFs},
+  author = {Shaofei Wang and Katja Schwarz and Andreas Geiger and Siyu Tang},
+  booktitle = {European Conference on Computer Vision},
+  year = {2022}
+} 
+</pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row paper">
+                <div class="image">
+                    <img src="teasers/COINS.png" alt="COINS" />
+                </div>
+                <div class="content">
+                    <div class="paper-title">
+                	<a href="https://zkf1997.github.io/COINS/index.html">COINS: Compositional Human-Scene Interaction Synthesis with Semantic Control</a>
+                    </div>
+                    <div class="conference">European Conference on Computer Vision (ECCV), 2022</div>
+                    <div class="authors">
+                        <a href="https://vlg.inf.ethz.ch/team/Kaifeng-Zhao.html" class="author">Kaifeng Zhao</a>, <strong class="author">Shaofei Wang</strong>, <a href="https://yz-cnsdqz.github.io/" class="author">Yan Zhang</a>, <a href="https://thabobeeler.com/" class="author">Thabo Beeler</a>, <a href="https://inf.ethz.ch/people/person-detail.MjYyNzgw.TGlzdC8zMDQsLTg3NDc3NjI0MQ==.html" class="author">Siyu Tang</a>
+                    </div>
+                    <div class="links">
+                        <a href="#" data-type="Short" data-index="0">Abstract</a>
+                        <a href="https://zkf1997.github.io/COINS/index.html" data-type="Long">Project page</a>
+                        <a href="https://arxiv.org/abs/2207.12824" data-type="Short">Paper</a>
+                        <a href="https://github.com/zkf1997/COINS">Code</a>
+                        <a href="#" data-index="4" data-type="Short">Bibtex</a>
+                        <div class="link-content" data-index="0">
+                            Our goal is to synthesize humans interacting with a given 3D scene controlled by high-level semantic specifications as pairs of action categories and object instances, e.g., “sit on the chair”. The key challenge of incorporating interaction semantics into the generation framework is to learn a joint representation that effectively captures heterogeneous information, including human body articulation, 3D object geometry, and the intent of the interaction. To address this challenge, we design a novel transformer-based generative model, in which the articulated 3D human body surface points and 3D objects are jointly encoded in a unified latent space, and the semantics of the interaction between the human and objects are embedded via positional encoding. Furthermore, inspired by the compositional nature of interactions that humans can simultaneously interact with multiple objects, we define interaction semantics as the composition of varying numbers of atomic action-object pairs. Our proposed generative model can naturally incorporate varying numbers of atomic interactions, which enables synthesizing compositional human-scene interactions without requiring composite interaction data. 
+                        </div>
+                        <div class="link-content" data-index="4">
+<pre>
+@inproceedings{Zhao:ECCV:2022,
+  title = {Compositional Human-Scene Interaction Synthesis with Semantic Control},
+  author = {Zhao, Kaifeng and Wang, Shaofei and Zhang, Yan and Beeler, Thabo and and Tang, Siyu},
+  booktitle = {European conference on computer vision (ECCV)},
+  month = oct,
+  year = {2022}
+} 
+</pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row paper">
+                <div class="image">
+                    <img src="teasers/MetaAvatar.jpeg" alt="MetaAvatar: Learning Animatable Clothed Human Models from Few Depth Images" />
+                </div>
+                <div class="content">
+                    <div class="paper-title">
+                	<a href="https://neuralbodies.github.io/metavatar/">MetaAvatar: Learning Animatable Clothed Human Models from Few Depth Images</a>
+                    </div>
+                    <div class="conference">Neural Information Process Systems (NeurIPS), 2021</div>
+                    <div class="authors">
+                        <strong class="author">Shaofei Wang</strong>, <a href="https://markomih.github.io/" class="author">Marko Mihajlovic</a>, <a href="https://qianlim.github.io/" class="author">Qianli Ma</a>, <a href="http://www.cvlibs.net/" class="author">Andreas Geiger</a>, <a href="https://inf.ethz.ch/people/person-detail.MjYyNzgw.TGlzdC8zMDQsLTg3NDc3NjI0MQ==.html" class="author">Siyu Tang</a>
+                    </div>
+                    <div class="links">
+                        <a href="#" data-type="Short" data-index="0">Abstract</a>
+                        <a href="https://neuralbodies.github.io/metavatar/" data-type="Long">Project page</a>
+                        <a href="https://arxiv.org/abs/2106.11944" data-type="Short">Paper</a>
+                        <a href="https://github.com/taconite/MetaAvatar-release">Code</a>
+                        <a href="#" data-index="4" data-type="Short">Bibtex</a>
+                        <div class="link-content" data-index="0">
+                            In this paper, we aim to create generalizable and controllable neural signed distance fields (SDFs) that represent clothed humans from monocular depth observations. Recent advances in deep learning, especially neural implicit representations, have enabled human shape reconstruction and controllable avatar generation from different sensor inputs. However, to generate realistic cloth deformations from novel input poses, watertight meshes or dense full-body scans are usually needed as inputs. Furthermore, due to the difficulty of effectively modeling pose-dependent cloth deformations for diverse body shapes and cloth types, existing approaches resort to per-subject/cloth-type optimization from scratch, which is computationally expensive. In contrast, we propose an approach that can quickly generate realistic clothed human avatars, represented as controllable neural SDFs, given only monocular depth images. We achieve this by using meta-learning to learn an initialization of a hypernetwork that predicts the parameters of neural SDFs. The hypernetwork is conditioned on human poses and represents a clothed neural avatar that deforms non-rigidly according to the input poses. Meanwhile, it is meta-learned to effectively incorporate priors of diverse body shapes and cloth types and thus can be much faster to fine-tune, compared to models trained from scratch. We qualitatively and quantitatively show that our approach outperforms state-of-the-art approaches that require complete meshes as inputs while our approach requires only depth frames as inputs and runs orders of magnitudes faster. Furthermore, we demonstrate that our meta-learned hypernetwork is very robust, being the first to generate avatars with realistic dynamic cloth deformations given as few as 8 monocular depth frames. 
+                        </div>
+                        <div class="link-content" data-index="4">
+<pre>
+@inproceedings{MetaAvatar:NeurIPS:2021,
+  author = {Shaofei Wang and Marko Mihajlovic and Qianli Ma and Andreas Geiger and Siyu Tang},
+  title = {MetaAvatar: Learning Animatable Clothed Human Models from Few Depth Images},
+  booktitle = {Conference on Neural Information Processing Systems (NeurIPS)},
+  year = {2021}
+} 
+</pre>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+            <div class="row paper">
+                <div class="image"><img src="teasers/PTF.png" alt="Locally Aware Piecewise Transformation Fields for 3D Human Mesh Registration" /></div>
+                <div class="content">
+                    <div class="paper-title">
+                        <a href="https://taconite.github.io/PTF/website/PTF.html">Locally Aware Piecewise Transformation Fields for 3D Human Mesh Registration</a></div><div class="conference">Computer Vision and Pattern Recognition (CVPR), 2021
+                    </div>
+                    <div class="authors">
+                        <strong class="author">Shaofei Wang</strong>, <a href="http://www.cvlibs.net/" class="author">Andreas Geiger</a>, <a href="https://inf.ethz.ch/people/person-detail.MjYyNzgw.TGlzdC8zMDQsLTg3NDc3NjI0MQ==.html" class="author">Siyu Tang</a>
+                    </div>
+                    <div class="links">
+                        <a href="#" data-type="Short" data-index="0">Abstract</a>
+                        <a href="https://taconite.github.io/PTF/website/PTF.html" data-type="Long">Project page</a>
+                        <a href="https://arxiv.org/abs/2104.08160" data-type="Short">Paper</a>
+                        <a href="https://github.com/taconite/PTF">Code</a>
+                        <a href="#" data-index="4" data-type="Short">Bibtex</a>
+                        <div class="link-content" data-index="0">
+                            Registering point clouds of dressed humans to parametric human models is a challenging task in computer vision. Traditional approaches often rely on heavily engineered pipelines that require accurate manual initialization of human poses and tedious post-processing. More recently, learning-based methods are proposed in hope to automate this process. We observe that pose initialization is key to accurate registration but existing methods often fail to provide accurate pose initialization. One major obstacle is that, despite recent effort on rotation representation learning in neural networks, regressing joint rotations from point clouds or images of humans is still very challenging. To this end, we propose novel piecewise transformation fields (PTF), a set of functions that learn 3D translation vectors to map any query point in posed space to its correspond position in rest-pose space. We combine PTF with multi-class occupancy networks, obtaining a novel learning-based framework that learns to simultaneously predict shape and per-point correspondences between the posed space and the canonical space for clothed human. Our key insight is that the translation vector for each query point can be effectively estimated using the point-aligned local features; consequently, rigid per bone transformations and joint rotations can be obtained efficiently via a least-square fitting given the estimated point correspondences, circumventing the challenging task of directly regressing joint rotations from neural networks. Furthermore, the proposed PTF facilitate canonicalized occupancy estimation, which greatly improves generalization capability and results in more accurate surface reconstruction with only half of the parameters compared with the state-of-the-art. Both qualitative and quantitative studies show that fitting parametric models with poses initialized by our network results in much better registration quality, especially for extreme poses.
+                        </div>
+                        <div class="link-content" data-index="4">
+<pre>
+@inproceedings{PTF:CVPR:2021,
+  author = {Shaofei Wang and Andreas Geiger and Siyu Tang},
+  title = {Locally Aware Piecewise Transformation Fields for 3D Human Mesh Registration},
+  booktitle = {Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year = {2021}
+}
+</pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!-- end publication list -->
         <!-- Javascript for showing and hiding the abstract and bibtex -->
         <script type="text/javascript">
             document.querySelectorAll(".links").forEach(function (p) {
