@@ -189,8 +189,9 @@
                 <div class="image"><img src="teasers/PTF.png" alt="Locally Aware Piecewise Transformation Fields for 3D Human Mesh Registration" /></div>
                 <div class="content">
                     <div class="paper-title">
-                        <a href="https://taconite.github.io/PTF/website/PTF.html">Locally Aware Piecewise Transformation Fields for 3D Human Mesh Registration</a></div><div class="conference">Computer Vision and Pattern Recognition (CVPR), 2021
+                        <a href="https://taconite.github.io/PTF/website/PTF.html">Locally Aware Piecewise Transformation Fields for 3D Human Mesh Registration</a>
                     </div>
+                    <div class="conference">Computer Vision and Pattern Recognition (CVPR), 2021 </div>
                     <div class="authors">
                         <strong class="author">Shaofei Wang</strong>, <a href="http://www.cvlibs.net/" class="author">Andreas Geiger</a>, <a href="https://inf.ethz.ch/people/person-detail.MjYyNzgw.TGlzdC8zMDQsLTg3NDc3NjI0MQ==.html" class="author">Siyu Tang</a>
                     </div>
@@ -210,6 +211,159 @@
   title = {Locally Aware Piecewise Transformation Fields for 3D Human Mesh Registration},
   booktitle = {Conference on Computer Vision and Pattern Recognition (CVPR)},
   year = {2021}
+}
+</pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row paper">
+                <div class="image"><img src="teasers/entity_resolve.png" alt="Accelerating Column Generation via Flexible Dual Optimal Inequalities with Application to Entity Resolution" /></div>
+                <div class="content">
+                    <div class="paper-title">
+                        <a href="https://github.com/lokhande-vishnu/EntityResolution">Accelerating Column Generation via Flexible Dual Optimal Inequalities with Application to Entity Resolution</a> <a><b>(Oral)</b></a>
+                    </div>
+                    <div class="conference">AAAI Conference on Artificial Intelligence (AAAI), 2020</div>
+                    <div class="authors">
+                        <a href="https://lokhande-vishnu.github.io/" class="author">Vishnu Suresh Lokhande</a>, <strong class="author">Shaofei Wang</strong>, <a href="https://www.linkedin.com/in/maneesh-singh-3523ab9/" class="author">Maneesh Singh</a>, <a href="https://sites.google.com/site/julianyarkonymachinelearning/" class="author">Julian Yarkony</a>
+                    </div>
+                    <div class="links">
+                        <a href="#" data-type="Short" data-index="0">Abstract</a>
+                        <a href="https://arxiv.org/abs/1909.05460" data-type="Short">Paper</a>
+                        <a href="https://github.com/lokhande-vishnu/EntityResolution">Code</a>
+                        <a href="#" data-index="4" data-type="Short">Bibtex</a>
+                        <div class="link-content" data-index="0">
+                           In this paper, we introduce a new optimization approach to Entity Resolution. Traditional approaches tackle entity resolution with hierarchical clustering, which does not benefit from a formal optimization formulation. In contrast, we model entity resolution as correlation-clustering, which we treat as a weighted set-packing problem and write as an integer linear program (ILP). In this case sources in the input data correspond to elements and entities in output data correspond to sets/clusters. We tackle optimization of weighted set packing by relaxing integrality in our ILP formulation. The set of potential sets/clusters can not be explicitly enumerated, thus motivating optimization via column generation. In addition to the novel formulation, we also introduce new dual optimal inequalities (DOI), that we call flexible dual optimal inequalities, which tightly lower-bound dual variables during optimization and accelerate column generation. We apply our formulation to entity resolution (also called de-duplication of records), and achieve state-of-the-art accuracy on two popular benchmark datasets. 
+                        </div>
+                        <div class="link-content" data-index="4">
+<pre>
+@inproceedings{EntityRes:AAAI:2020,
+  author = {Vishnu Suresh Lokhande, Shaofei Wang, Maneesh Singh, Julian Yarkony},
+  title = {Accelerating Column Generation via Flexible Dual Optimal Inequalities with Application to Entity Resolution},
+  booktitle = {AAAI Conference on Artificial Intelligence (AAAI)},
+  year = {2020}
+}
+</pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row paper">
+                <div class="image"><img src="teasers/benders.png" alt="Accelerating Dynamic Programs via Nested Benders Decomposition with Application to Multi-person Pose Estimation" /></div>
+                <div class="content">
+                    <div class="paper-title">
+                        <a>Accelerating Dynamic Programs via Nested Benders Decomposition with Application to Multi-person Pose Estimation</a>
+                    </div>
+                    <div class="conference">European Conference on Computer Vision (ECCV), 2018</div>
+                    <div class="authors">
+                        <strong class="author">Shaofei Wang</strong>, <a href="https://www.ics.uci.edu/~ihler/" class="author">Alexander Ihler</a>, <a href="http://kordinglab.com/" class="author">Konrad Kording</a>, <a href="https://sites.google.com/site/julianyarkonymachinelearning/" class="author">Julian Yarkony</a>
+                    </div>
+                    <div class="links">
+                        <a href="#" data-type="Short" data-index="0">Abstract</a>
+                        <a href="https://openaccess.thecvf.com/content_ECCV_2018/papers/Shaofei_Wang_Accelerating_Dynamic_Programs_ECCV_2018_paper.pdf" data-type="Short">Paper</a>
+                        <a href="#" data-index="4" data-type="Short">Bibtex</a>
+                        <div class="link-content" data-index="0">
+                           We present a novel approach to solve dynamic programs (DP), which are frequent in computer vision, on tree-structured graphs with exponential node state space. Typical DP approaches have to enumerate the joint state space of two adjacent nodes on every edge of the tree to compute the optimal messages. Here we propose an algorithm based on Nested Benders Decomposition (NBD) which iteratively lower-bounds the message on every edge and promises to be far more efficient. We apply our NBD algorithm along with a novel Minimum Weight Set Packing (MWSP) formulation to a multi-person pose estimation problem. While our algorithm is provably optimal at termination it operates in linear time for practical DP problems, gaining up to 500x speed up over traditional DP algorithm which have polynomial complexity. 
+                        </div>
+                        <div class="link-content" data-index="4">
+<pre>
+@inproceedings{Benders:ECCV:2018,
+  author = {Shaofei Wang, Alexander Ihler, Konrad Kording, Julian Yarkony},
+  title = {Accelerating Dynamic Programs via Nested Benders Decomposition with Application to Multi-person Pose Estimation},
+  booktitle = {European Conference on Computer Vision (ECCV)},
+  year = {2018}
+}
+</pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row paper">
+                <div class="image"><img src="teasers/learn_mot_ijcv.png" alt="Learning Optimal Parameters for Multi-target Tracking with Contextual Interactions" /></div>
+                <div class="content">
+                    <div class="paper-title">
+                        <a>Learning Optimal Parameters for Multi-target Tracking with Contextual Interactions</a>
+                    </div>
+                    <div class="conference">International Journal of Computer Vision (IJCV), 2017</div>
+                    <div class="authors">
+                        <strong class="author">Shaofei Wang</strong>, <a href="https://www.ics.uci.edu/~fowlkes/" class="author">Charless C. Fowlkes</a>
+                    </div>
+                    <div class="links">
+                        <a href="#" data-type="Short" data-index="0">Abstract</a>
+                        <a href="https://arxiv.org/abs/1610.01394" data-type="Short">Paper</a>
+                        <a href="#" data-index="4" data-type="Short">Bibtex</a>
+                        <div class="link-content" data-index="0">
+                           We describe an end-to-end framework for learning parameters of min-cost flow multi-target tracking problem with quadratic trajectory interactions including suppression of overlapping tracks and contextual cues about cooccurrence of different objects. Our approach utilizes structured prediction with a tracking-specific loss function to learn the complete set of model parameters. In this learning framework, we evaluate two different approaches to finding an optimal set of tracks under a quadratic model objective, one based on an LP relaxation and the other based on novel greedy variants of dynamic programming that handle pairwise interactions. We find the greedy algorithms achieve almost equivalent accuracy to the LP relaxation while being up to 10x faster than a commercial LP solver. We evaluate trained models on three challenging benchmarks. Surprisingly, we find that with proper parameter learning, our simple data association model without explicit appearance/motion reasoning is able to achieve comparable or better accuracy than many state-of-the-art methods that use far more complex motion features or appearance affinity metric learning.
+                        </div>
+                        <div class="link-content" data-index="4">
+<pre>
+@article{learn_mot:IJCV:2017,
+  author = {Shaofei Wang, Charless C. Fowlkes},
+  title = {Learning Optimal Parameters for Multi-target Tracking with Contextual Interactions},
+  journal = {International Journal of Computer Vision (IJCV)},
+  volume = {122},
+  pages = {484–501},
+  year = {2017}
+}
+</pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row paper">
+                <div class="image"><img src="teasers/dcg_mot.png" alt="Tracking Objects with Higher Order Interactions via Delayed Column Generation" /></div>
+                <div class="content">
+                    <div class="paper-title">
+                        <a>Tracking Objects with Higher Order Interactions via Delayed Column Generation</a>
+                    </div>
+                    <div class="conference">International Conference on Artificial Intelligence and Statistics (AISTATS), 2017</div>
+                    <div class="authors">
+                        <strong class="author">Shaofei Wang</strong>, <a href="https://steffenwolf.science/" class="author"> Steffen Wolf</a>, <a href="https://www.ics.uci.edu/~fowlkes/" class="author">Charless C. Fowlkes</a>, <a href="https://sites.google.com/site/julianyarkonymachinelearning/" class="author">Julian Yarkony</a>
+                    </div>
+                    <div class="links">
+                        <a href="#" data-type="Short" data-index="0">Abstract</a>
+                        <a href="http://proceedings.mlr.press/v54/wang17c.html" data-type="Short">Paper</a>
+                        <a href="#" data-index="4" data-type="Short">Bibtex</a>
+                        <div class="link-content" data-index="0">
+                            We study the problem of multi-target tracking and data association in video. We formulate this in terms of selecting a subset of high-quality tracks subject to the constraint that no pair of selected tracks is associated with a common detection (of an object). This objective is equivalent to the classic NP-hard problem of finding a maximum-weight set packing (MWSP) where tracks correspond to sets and is made further difficult since the number of candidate tracks grows exponentially in the number of detections. We present a relaxation of this combinatorial problem that uses a column generation formulation where the pricing problem is solved via dynamic programming to efficiently explore the space of tracks. We employ row generation to tighten the bound in such a way as to preserve efficient inference in the pricing problem. We show the practical utility of this algorithm for pedestrian and particle tracking. 
+                        </div>
+                        <div class="link-content" data-index="4">
+<pre>
+@inproceedings{dcg_mot:AISTATS:2017,
+  author = {Shaofei Wang, Steffen Wolf, Charless C. Fowlkes, Julian Yarkony},
+  title = {Tracking Objects with Higher Order Interactions via Delayed Column Generation},
+  journal = {International Conference on Artificial Intelligence and Statistics (AISTATS)},
+  year = {2017}
+}
+</pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row paper">
+                <div class="image"><img src="teasers/learn_mot_bmvc.png" alt="Learning Optimal Parameters For Multi-target Tracking" /></div>
+                <div class="content">
+                    <div class="paper-title">
+                        <a>Learning Optimal Parameters For Multi-target Tracking</a> <a><b>(Oral)</b></a>
+                    </div>
+                    <div class="conference">British Machine Vision Conference (BMVC), 2015</div>
+                    <div class="authors">
+                        <strong class="author">Shaofei Wang</strong>, <a href="https://www.ics.uci.edu/~fowlkes/" class="author">Charless C. Fowlkes</a></a>
+                    </div>
+                    <div class="links">
+                        <a href="#" data-type="Short" data-index="0">Abstract</a>
+                        <a href="https://www.ics.uci.edu/~fowlkes/papers/wf-multitarget-bmvc2015.pdf" data-type="Short">Paper</a>
+                        <a href="#" data-index="4" data-type="Short">Bibtex</a>
+                        <div class="link-content" data-index="0">
+                            We describe an end-to-end framework for learning parameters of min-cost flow multitarget tracking problem with quadratic trajectory interactions including suppression of overlapping tracks and contextual cues about co-occurrence of different objects. Our approach utilizes structured prediction with a tracking-specific loss function to learn the complete set of model parameters. Under our learning framework, we evaluate two different approaches to finding an optimal set of tracks under quadratic model objective based on an LP relaxation and a novel greedy extension to dynamic programming that handles pairwise interactions. We find the greedy algorithm achieves almost equivalent accuracy to the LP relaxation while being 2-7x faster than a commercial solver. We evaluate trained models on the challenging MOT and KITTI benchmarks. Surprisingly, we find that with proper parameter learning, our simple data-association model without explicit appearance/motion reasoning is able to outperform many state-of-the-art methods that use far more complex motion features and affinity metric learning.
+                        </div>
+                        <div class="link-content" data-index="4">
+<pre>
+@inproceedings{learn_mot:BMVC:2015,
+  author = {Shaofei Wang, Charless C. Fowlkes},
+  title = {Learning Optimal Parameters For Multi-target Tracking},
+  journal = {British Machine Vision Conference (BMVC)},
+  year = {2015}
 }
 </pre>
                         </div>
