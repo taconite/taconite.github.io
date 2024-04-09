@@ -41,6 +41,8 @@
                         <a href=https://uci.edu/>University of California, Irvine</a>
                         under supervision of 
                         <a href=https://www.ics.uci.edu/~fowlkes/> Prof. Charless Fowlkes</a>
+                        <!--br>
+                        <p style="font-weight: bolder;">I will graduate in fall of 2024 and am actively looking for full-time research positions. Please feel free to reach out to me!</p-->
                     </p>
                     <p style="text-align:center">
                         <span class="icon">
@@ -72,6 +74,108 @@
             <!-- start publication list -->
             <div class="row paper">
                 <div class="image">
+                    <img src="teasers/IA_teaser.gif" alt="IntrinsicAvatar: Physically Based Inverse Rendering of Dynamic Humans from Monocular Videos via Explicit Ray Tracing" />
+                </div>
+                <div class="content">
+                    <div class="paper-title">
+                	<a href="https://neuralbodies.github.io/IntrinsicAvatar/">IntrinsicAvatar: Physically Based Inverse Rendering of Dynamic Humans from Monocular Videos via Explicit Ray Tracing</a>
+                    </div>
+                    <div class="conference">IEEE Conf. on Computer Vision and Pattern Recognition (CVPR), 2024</div>
+                    <div class="authors">
+                        <strong class="author">Shaofei Wang</strong>, <a href="https://bozidarantic.com/" class="author">Božidar Antić</a>, <a href="http://www.cvlibs.net/" class="author">Andreas Geiger</a>, <a href="https://vlg.inf.ethz.ch/team/Prof-Dr-Siyu-Tang.html" class="author">Siyu Tang</a>
+                    </div>
+                    <div class="links">
+                        <a href="#" data-type="Short" data-index="0">Abstract</a>
+                        <a href="https://neuralbodies.github.io/IntrinsicAvatar/" data-type="Long">Project page</a>
+                        <a href="https://arxiv.org/abs/2312.05210" data-type="Short">Paper</a>
+                        <a href="https://github.com/taconite/IntrinsicAvatar">Code</a>
+                        <a href="#" data-index="4" data-type="Short">Bibtex</a>
+                        <div class="link-content" data-index="0">
+                            We present IntrinsicAvatar, a novel approach to recovering the intrinsic properties of clothed human avatars including geometry, albedo, material, and environment lighting from only monocular videos. Recent advancements in human-based neural rendering have enabled high-quality geometry and appearance reconstruction of clothed humans from just monocular videos.  However, these methods bake intrinsic properties such as albedo, material, and environment lighting into a single entangled neural representation.  On the other hand, only a handful of works tackle the problem of estimating geometry and disentangled appearance properties of clothed humans from monocular videos. They usually achieve limited quality and disentanglement due to approximations of secondary shading effects via learned MLPs.  In this work, we propose to model secondary shading effects explicitly via Monte-Carlo ray tracing.  We model the rendering process of clothed humans as a volumetric scattering process, and combine ray tracing with body articulation.  Our approach can recover high-quality geometry, albedo, material, and lighting properties of clothed humans from a single monocular video, without requiring supervised pre-training using ground truth materials.  Furthermore, since we explicitly model the volumetric scattering process and ray tracing, our model naturally generalizes to novel poses, enabling animation of the reconstructed avatar in novel lighting conditions.
+                        </div>
+                        <div class="link-content" data-index="4">
+<pre>
+@inproceedings{Wang:CVPR:2024,
+  title   = {IntrinsicAvatar: Physically Based Inverse Rendering of Dynamic Humans from Monocular Videos via Explicit Ray Tracing},
+  author  = {Shaofei Wang and Bo\v{z}idar Anti\'{c} and Andreas Geiger and Siyu Tang},
+  booktitle = {IEEE Conf. on Computer Vision and Pattern Recognition (CVPR)},
+  year    = {2024}
+}
+</pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row paper">
+                <div class="image">
+                    <img src="teasers/3DGS-Avatar.gif" alt="3DGS-Avatar: Animatable Avatars via Deformable 3D Gaussian Splatting" />
+                </div>
+                <div class="content">
+                    <div class="paper-title">
+                	<a href="https://neuralbodies.github.io/3DGS-Avatar/">3DGS-Avatar: Animatable Avatars via Deformable 3D Gaussian Splatting</a>
+                    </div>
+                    <div class="conference">IEEE Conf. on Computer Vision and Pattern Recognition (CVPR), 2024</div>
+                    <div class="authors">
+                        <a href="https://mikeqzy.github.io/" class="author">Zhiying Qian</a>, <strong class="author">Shaofei Wang</strong>, <a href="https://markomih.github.io/" class="author">Marko Mihajlovic</a>, <a href="http://www.cvlibs.net/" class="author">Andreas Geiger</a>, <a href="https://vlg.inf.ethz.ch/team/Prof-Dr-Siyu-Tang.html" class="author">Siyu Tang</a>
+                    </div>
+                    <div class="links">
+                        <a href="#" data-type="Short" data-index="0">Abstract</a>
+                        <a href="https://neuralbodies.github.io/3DGS-Avatar/" data-type="Long">Project page</a>
+                        <a href="https://arxiv.org/abs/2312.09228" data-type="Short">Paper</a>
+                        <a href="https://github.com/mikeqzy/3dgs-avatar-release">Code</a>
+                        <a href="#" data-index="4" data-type="Short">Bibtex</a>
+                        <div class="link-content" data-index="0">
+                            We introduce an approach that creates animatable human avatars from monocular videos using 3D Gaussian Splatting (3DGS). Existing methods based on neural radiance fields (NeRFs) achieve high-quality novel-view/novel-pose image synthesis but often require days of training, and are extremely slow at inference time. Recently, the community has explored fast grid structures for efficient training of clothed avatars. Albeit being extremely fast at training, these methods can barely achieve an interactive rendering frame rate with around 15 FPS. In this paper, we use 3D Gaussian Splatting and learn a non-rigid deformation network to reconstruct animatable clothed human avatars that can be trained within 30 minutes and rendered at real-time frame rates (50+ FPS). Given the explicit nature of our representation, we further introduce as-isometric-as-possible regularizations on both the Gaussian mean vectors and the covariance matrices, enhancing the generalization of our model on highly articulated unseen poses. Experimental results show that our method achieves comparable and even better performance compared to state-of-the-art approaches on animatable avatar creation from a monocular input, while being 400x and 250x faster in training and inference, respectively.
+                        </div>
+                        <div class="link-content" data-index="4">
+<pre>
+@inproceedings{Qian:2024:3DGSAvatar,
+  title={3DGS-Avatar: Animatable Avatars via Deformable 3D Gaussian Splatting}, 
+  author={Zhiyin Qian and Shaofei Wang and Marko Mihajlovic and Andreas Geiger and Siyu Tang},
+  booktitle={IEEE Conf. on Computer Vision and Pattern Recognition (CVPR)}, 
+  year={2024},
+}
+</pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row paper">
+                <div class="image">
+                    <img src="teasers/morphablediffusion_teaser.gif" alt="Morphable Diffusion: 3D-Consistent Diffusion for Single-image Avatar Creation" />
+                </div>
+                <div class="content">
+                    <div class="paper-title">
+                	<a href="https://xiyichen.github.io/morphablediffusion/">Morphable Diffusion: 3D-Consistent Diffusion for Single-image Avatar Creation</a>
+                    </div>
+                    <div class="conference">IEEE Conf. on Computer Vision and Pattern Recognition (CVPR), 2024</div>
+                    <div class="authors">
+                        <a href="https://xiyichen.github.io/" class="author">Xiyi Chen</a>, <a href="https://markomih.github.io/" class="author">Marko Mihajlovic</a>, <strong class="author">Shaofei Wang</strong>, <a href="https://vlg.inf.ethz.ch/team/Dr-Sergey-Prokudin.html" class="author">Sergey Prokudin</a>, <a href="https://vlg.inf.ethz.ch/team/Prof-Dr-Siyu-Tang.html" class="author">Siyu Tang</a>
+                    </div>
+                    <div class="links">
+                        <a href="#" data-type="Short" data-index="0">Abstract</a>
+                        <a href="https://xiyichen.github.io/morphablediffusion/" data-type="Long">Project page</a>
+                        <a href="https://arxiv.org/abs/2401.04728" data-type="Short">Paper</a>
+                        <a href="https://github.com/xiyichen/morphablediffusion">Code</a>
+                        <a href="#" data-index="4" data-type="Short">Bibtex</a>
+                        <div class="link-content" data-index="0">
+                            We introduce a morphable diffusion model to enable consistent controllable novel view synthesis of humans from a single image. Given a single input image and a morphable mesh with a desired facial expression, our method directly generates 3D consistent and photo-realistic images from novel viewpoints, which we could use to reconstruct a coarse 3D model using off-the-shelf neural surface reconstruction methods such as NeuS2.
+                        </div>
+                        <div class="link-content" data-index="4">
+<pre>
+@inproceedings{Chen:2024:Morphable, 
+  title={Morphable Diffusion: 3D-Consistent Diffusion for Single-image Avatar Creation},
+  author={Xiyi Chen and Marko Mihajlovic and Shaofei Wang and Sergey Prokudin and Siyu Tang}, 
+  booktitle={IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}, 
+  year={2024}
+}
+</pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row paper">
+                <div class="image">
                     <img src="teasers/DIMOS.png" alt="DIMOS: Synthesizing Diverse Human Motions in 3D Indoor Scenes" />
                 </div>
                 <div class="content">
@@ -94,10 +198,10 @@
                         <div class="link-content" data-index="4">
 <pre>
 @inproceedings{Zhao:ICCV:2023,
- title = {Synthesizing Diverse Human Motions in 3D Indoor Scenes},
- author = {Zhao, Kaifeng and Zhang, Yan and Wang, Shaofei and Beeler, Thabo and and Tang, Siyu},
- booktitle = {International conference on computer vision (ICCV)},
- year = {2023}
+  title = {Synthesizing Diverse Human Motions in 3D Indoor Scenes},
+  author = {Zhao, Kaifeng and Zhang, Yan and Wang, Shaofei and Beeler, Thabo and and Tang, Siyu},
+  booktitle = {International conference on computer vision (ICCV)},
+  year = {2023}
 }
 </pre>
                         </div>
@@ -213,7 +317,7 @@
                     <div class="paper-title">
                         <a href="https://taconite.github.io/PTF/website/PTF.html">Locally Aware Piecewise Transformation Fields for 3D Human Mesh Registration</a>
                     </div>
-                    <div class="conference">Computer Vision and Pattern Recognition (CVPR), 2021 </div>
+                    <div class="conference">IEEE Conf. on Computer Vision and Pattern Recognition (CVPR), 2021 </div>
                     <div class="authors">
                         <strong class="author">Shaofei Wang</strong>, <a href="http://www.cvlibs.net/" class="author">Andreas Geiger</a>, <a href="https://inf.ethz.ch/people/person-detail.MjYyNzgw.TGlzdC8zMDQsLTg3NDc3NjI0MQ==.html" class="author">Siyu Tang</a>
                     </div>
@@ -231,7 +335,7 @@
 @inproceedings{PTF:CVPR:2021,
   author = {Shaofei Wang and Andreas Geiger and Siyu Tang},
   title = {Locally Aware Piecewise Transformation Fields for 3D Human Mesh Registration},
-  booktitle = {Conference on Computer Vision and Pattern Recognition (CVPR)},
+  booktitle = {IEEE Conf. on Computer Vision and Pattern Recognition (CVPR)},
   year = {2021}
 }
 </pre>
