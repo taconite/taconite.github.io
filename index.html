@@ -25,28 +25,11 @@
                 </div>
                 <div class="content">
                     <p>
-                        I am a PhD student at
-                        <a href=https://ethz.ch/en.html>
-                        ETH Zurich </a>,
-                        co-advised by 
-                        <a href=https://inf.ethz.ch/people/person-detail.MjYyNzgw.TGlzdC8zMDQsLTg3NDc3NjI0MQ==.html> Prof. Siyu Tang</a>
-                        and <a href=http://www.cvlibs.net/> Prof. Andreas Geiger</a>.
-                        My research topic is computer vision, specifically in building controllable
-                        neural implicit representations for human bodies with clothes. I am also interested
-                        in differentiable combinatorial optimization and its application in computer vision.
-                        Before I came to ETH, I worked as a researcher in <a href=http://kordinglab.com/> Kording Lab</a>
-                        at University of Pennsylvania. Even before that, I worked as a senior system engineer
-                        at the autonomous driving group of Baidu.
-                        I got my Master's degree from
-                        <a href=https://uci.edu/>University of California, Irvine</a>
-                        under supervision of 
-                        <a href=https://www.ics.uci.edu/~fowlkes/> Prof. Charless Fowlkes</a>
-                        <!--br>
-                        <p style="font-weight: bolder;">I will graduate in fall of 2024 and am actively looking for full-time research positions. Please feel free to reach out to me!</p-->
+                        I am currently a Research Scientist at Beijing Institute for General Artificial Intelligence (BIGAI).  I obtained my PhD degree from <a href=https://ethz.ch/en.html> ETH Zurich </a>, where I was fortunate to be co-advised by <a href=https://inf.ethz.ch/people/person-detail.MjYyNzgw.TGlzdC8zMDQsLTg3NDc3NjI0MQ==.html> Prof. Siyu Tang</a> and <a href=http://www.cvlibs.net/> Prof. Andreas Geiger</a>.  My research interests lie in 3D computer vision and computer graphics, with a focus on 3D human/scene reconstruction and synthesis using differentiable rendering (NeRF, 3DGS, etc.).  I am also interested in generative models (diffusion, flow-matching, etc.) and their applications in 3D vision.
                     </p>
                     <p style="text-align:center">
                         <span class="icon">
-                            <a href=mailto:shaofei.wang@inf.ethz.ch>
+                            <a href=mailto:sfwang0928@gmail.com>
                                 <i class="fa fa-envelope-square fa-2x" aria-hidden="true"></i>
                             </a>
                         </span>
@@ -72,6 +55,110 @@
                 <span>Publications</span>
             </div>
             <!-- start publication list -->
+            <div class="row paper">
+                <div class="image">
+                    <img src="teasers/DNF-Avatar.png" alt="DNF-Avatar: Distilling Neural Fields for Real-time Animatable Avatar Relighting" style="max-height: 150px; object-fit: contain;" />
+                </div>
+                <div class="content">
+                    <div class="paper-title">
+                	<a href="https://jzr99.github.io/DNF-Avatar/">DNF-Avatar: Distilling Neural Fields for Real-time Animatable Avatar Relighting</a> <span style="color: #ff0000; font-weight: bold;">(Oral)</span>
+                    </div>
+                    <div class="conference">International Conference on Computer Vision (ICCV) Findings, 2025</div>
+                    <div class="authors">
+                        <a href="https://jzr99.github.io/" class="author">Zeren Jiang</a>, <strong class="author">Shaofei Wang</strong>, <a href="https://vlg.inf.ethz.ch/team/Prof-Dr-Siyu-Tang.html" class="author">Siyu Tang</a>
+                    </div>
+                    <div class="links">
+                        <a href="#" data-type="Short" data-index="0">Abstract</a>
+                        <a href="https://jzr99.github.io/DNF-Avatar/" data-type="Long">Project page</a>
+                        <a href="https://arxiv.org/abs/2504.10486" data-type="Short">Paper</a>
+                        <a href="https://github.com/jzr99/DNF-Avatar" data-type="Short">Code</a>
+                        <a href="#" data-index="4" data-type="Short">Bibtex</a>
+                        <div class="link-content" data-index="0">
+                            Creating relightable and animatable human avatars from monocular videos is a rising research topic with a range of applications, e.g. virtual reality, sports, and video games. Previous works utilize neural fields together with physically based rendering (PBR), to estimate geometry and disentangle appearance properties of human avatars. However, one drawback of these methods is the slow rendering speed due to the expensive Monte Carlo ray tracing. To tackle this problem, we proposed to distill the knowledge from implicit neural fields (teacher) to explicit 2D Gaussian splatting (student) representation to take advantage of the fast rasterization property of Gaussian splatting. To avoid ray-tracing, we employ the split-sum approximation for PBR appearance. We also propose novel part-wise ambient occlusion probes for shadow computation. Shadow prediction is achieved by querying these probes only once per pixel, which paves the way for real-time relighting of avatars. These techniques combined give high-quality relighting results with realistic shadow effects. Our experiments demonstrate that the proposed student model achieves comparable relighting results with our teacher model while being 370 times faster at inference time, achieving a 67 FPS rendering speed.
+                        </div>
+                        <div class="link-content" data-index="4">
+<pre>
+@inproceedings{Jiang2025ICCVFindings,
+  title = {DNF-Avatar: Distilling Neural Fields for Real-time Animatable Avatar Relighting},
+  author = {Zeren Jiang and Shaofei Wang and Siyu Tang},
+  booktitle = {International Conference on Computer Vision (ICCV) Findings},
+  year = {2025}
+}
+</pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row paper">
+                <div class="image">
+                    <video autoplay loop muted playsinline>
+                        <source src="teasers/RFGCA.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="content">
+                    <div class="paper-title">
+                	<a href="https://neuralbodies.github.io/RFGCA/">Relightable Full-body Gaussian Codec Avatars</a> <span style="color: #ff0000; font-weight: bold;">(Featured in <a href="https://www.youtube.com/watch?v=HfHC0wNYry8" style="color: #ff0000;">SIGGRAPH 2025 Technical Papers Trailer</a>)</span>
+                    </div>
+                    <div class="conference">ACM SIGGRAPH Conference Papers, 2025</div>
+                    <div class="authors">
+                        <strong class="author">Shaofei Wang</strong>, <a href="https://www.cs.cmu.edu/~tsimon/" class="author">Tomas Simon</a>, <a href="https://isantesteban.com/" class="author">Igor Santesteban</a>, <a href="https://scholar.google.com/citations?user=oLi7xJ0AAAAJ&hl=en" class="author">Timur Bagautdinov</a>, <a href="https://junxuan-li.github.io/" class="author">Junxuan Li</a>, <a href="https://vasuagrawal.com/" class="author">Vasu Agrawal</a>, <a href="https://scholar.google.com/citations?user=s35rxJwAAAAJ&hl=es" class="author">Fabian Prada</a>, <a href="https://sites.google.com/view/shoou-i-yu/home" class="author">Shoou-I Yu</a>, <a href="https://www.linkedin.com/in/pace-nalbone/" class="author">Pace Nalbone</a>, <a href="https://www.linkedin.com/in/mattgramlich/" class="author">Matt Gramlich</a>, <a href="https://www.linkedin.com/in/roman-lubachersky-537307119/" class="author">Roman Lubachersky</a>, <a href="https://sites.google.com/view/chengleiwu/" class="author">Chenglei Wu</a>, <a href="https://scholar.google.com/citations?user=Wx62iOsAAAAJ&hl=zh-CN" class="author">Javier Romero</a>, <a href="https://scholar.google.com/citations?user=ss-IvjMAAAAJ&hl=en" class="author">Jason Saragih</a>, <a href="https://zollhoefer.com/" class="author">Michael Zollhöfer</a>, <a href="http://www.cvlibs.net/" class="author">Andreas Geiger</a>, <a href="https://vlg.inf.ethz.ch/team/Prof-Dr-Siyu-Tang.html" class="author">Siyu Tang</a>, <a href="https://shunsukesaito.github.io/" class="author">Shunsuke Saito</a>
+                    </div>
+                    <div class="links">
+                        <a href="#" data-type="Short" data-index="10">Abstract</a>
+                        <a href="https://neuralbodies.github.io/RFGCA/" data-type="Long">Project page</a>
+                        <a href="https://dl.acm.org/doi/10.1145/3721238.3730739" data-type="Short">Paper</a>
+                        <a href="#" data-index="14" data-type="Short">Bibtex</a>
+                        <div class="link-content" data-index="10">
+                            We propose Relightable Full-Body Gaussian Codec Avatars, a new approach for modeling relightable full-body avatars with fine-grained details including face and hands.  The unique challenge for relighting full-body avatars lies in the large deformations caused by body articulation and the resulting impact on appearance caused by light transport.  Changes in body pose can dramatically change the orientation of body surfaces with respect to lights, resulting in both local appearance changes due to changes in local light transport functions, as well as non-local changes due to occlusion between body parts.  To address this, we decompose the light transport into local and non-local effects.  Local appearance changes are modeled using learnable zonal harmonics for diffuse radiance transfer.  Unlike spherical harmonics, zonal harmonics are highly efficient to rotate under articulation.  This allows us to learn diffuse radiance transfer in a local coordinate frame, which disentangles the local radiance transfer from the articulation of the body.  To account for non-local appearance changes, we introduce a shadow network that predicts shadows given precomputed incoming irradiance on a base mesh.  This facilitates the learning of non-local shadowing between the body parts.  Finally, we use a deferred shading approach to model specular radiance transfer and better capture reflections and highlights such as eye glints.  We demonstrate that our approach successfully models both the local and non-local light transport required for relightable full-body avatars, with a superior generalization ability under novel illumination conditions and unseen poses.
+                        </div>
+                        <div class="link-content" data-index="14">
+<pre>
+@inproceedings{Wang2025SIGGRAPH,
+  title = {Relightable Full-body Gaussian Codec Avatars},
+  author = {Shaofei Wang and Tomas Simon and Igor Santesteban and Timur Bagautdinov and Junxuan Li and Vasu Agrawal and Fabian Prada and Shoou-I Yu and Pace Nalbone and Matt Gramlich and Roman Lubachersky and Chenglei Wu and Javier Romero and Jason Saragih and Michael Zollh\"ofer and Andreas Geiger and Siyu Tang and Shunsuke Saito},
+  booktitle = {ACM SIGGRAPH Conference Papers},
+  year = {2025}
+}
+</pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row paper">
+                <div class="image">
+                    <img src="teasers/RISE-SDF.gif" alt="RISE-SDF: a Relightable Information-Shared Signed Distance Field for Glossy Object Inverse Rendering" />
+                </div>
+                <div class="content">
+                    <div class="paper-title">
+                	<a href="https://dehezhang2.github.io/RISE-SDF/">RISE-SDF: a Relightable Information-Shared Signed Distance Field for Glossy Object Inverse Rendering</a>
+                    </div>
+                    <div class="conference">International Conference on 3D Vision (3DV), 2025</div>
+                    <div class="authors">
+                        <a href="https://dehezhang2.github.io/" class="author">Deheng Zhang</a>*, <a href="https://www.linkedin.com/in/jingyu-wang-8a3957225/?originalSubdomain=ch" class="author">Jingyu Wang</a>*, <strong class="author">Shaofei Wang</strong>, <a href="https://markomih.github.io/" class="author">Marko Mihajlovic</a>, <a href="https://vlg.inf.ethz.ch/team/Dr-Sergey-Prokudin.html" class="author">Sergey Prokudin</a>, <a href="https://uni-tuebingen.de/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/computergrafik/lehrstuhl/mitarbeiter/prof-dr-ing-hendrik-lensch/" class="author">Hendrik P.A. Lensch</a>, <a href="https://vlg.inf.ethz.ch/team/Prof-Dr-Siyu-Tang.html" class="author">Siyu Tang</a>
+                        <br><span style="font-size: 10pt; font-style: italic;">* Equal contribution</span>
+                    </div>
+                    <div class="links">
+                        <a href="#" data-type="Short" data-index="20">Abstract</a>
+                        <a href="https://dehezhang2.github.io/RISE-SDF/" data-type="Long">Project page</a>
+                        <a href="https://arxiv.org/abs/2409.20140" data-type="Short">Paper</a>
+                        <a href="https://github.com/dehezhang2/RISE-SDF" data-type="Short">Code</a>
+                        <a href="#" data-index="24" data-type="Short">Bibtex</a>
+                        <div class="link-content" data-index="20">
+                            In this paper, we propose a novel end-to-end relightable neural inverse rendering system that achieves high-quality reconstruction of geometry and material properties, thus enabling high-quality relighting. The cornerstone of our method is a two-stage approach for learning a better factorization of scene parameters. In the first stage, we develop a reflection-aware radiance field using a neural signed distance field (SDF) as the geometry representation and deploy an MLP (multilayer perceptron) to estimate indirect illumination. In the second stage, we introduce a novel information-sharing network structure to jointly learn the radiance field and the physically based factorization of the scene. For the physically based factorization, to reduce the noise caused by Monte Carlo sampling, we apply a split-sum approximation with a simplified Disney BRDF and cube mipmap as the environment light representation. In the relighting phase, to enhance the quality of indirect illumination, we propose a second split-sum algorithm to trace secondary rays under the split-sum rendering framework. Furthermore, there is no dataset or protocol available to quantitatively evaluate the inverse rendering performance for glossy objects. To assess the quality of material reconstruction and relighting, we have created a new dataset with ground truth BRDF parameters and relighting results. Our experiments demonstrate that our algorithm achieves state-of-the-art performance in inverse rendering and relighting, with particularly strong results in the reconstruction of highly reflective objects.
+                        </div>
+                        <div class="link-content" data-index="24">
+<pre>
+@inproceedings{Zhang2025THREEDV,
+  title = {RISE-SDF: a Relightable Information-Shared Signed Distance Field for Glossy Object Inverse Rendering},
+  author = {Deheng Zhang and Jingyu Wang and Shaofei Wang and Marko Mihajlovic and Sergey Prokudin and Hendrik P.A. Lensch and Siyu Tang},
+  booktitle = {International Conference on 3D Vision (3DV)},
+  year = {2025}
+}
+</pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="row paper">
                 <div class="image">
                     <img src="teasers/IA_teaser.gif" alt="IntrinsicAvatar: Physically Based Inverse Rendering of Dynamic Humans from Monocular Videos via Explicit Ray Tracing" />
@@ -347,7 +434,7 @@
                 <div class="image"><img src="teasers/entity_resolve.png" alt="Accelerating Column Generation via Flexible Dual Optimal Inequalities with Application to Entity Resolution" /></div>
                 <div class="content">
                     <div class="paper-title">
-                        <a href="https://github.com/lokhande-vishnu/EntityResolution">Accelerating Column Generation via Flexible Dual Optimal Inequalities with Application to Entity Resolution</a> <a><b>(Oral)</b></a>
+                        <a href="https://github.com/lokhande-vishnu/EntityResolution">Accelerating Column Generation via Flexible Dual Optimal Inequalities with Application to Entity Resolution</a> <span style="color: #ff0000; font-weight: bold;">(Oral)</span>
                     </div>
                     <div class="conference">AAAI Conference on Artificial Intelligence (AAAI), 2020</div>
                     <div class="authors">
@@ -470,7 +557,7 @@
                 <div class="image"><img src="teasers/learn_mot_bmvc.png" alt="Learning Optimal Parameters For Multi-target Tracking" /></div>
                 <div class="content">
                     <div class="paper-title">
-                        <a>Learning Optimal Parameters For Multi-target Tracking</a> <a><b>(Oral)</b></a>
+                        <a>Learning Optimal Parameters For Multi-target Tracking</a> <span style="color: #ff0000; font-weight: bold;">(Oral)</span>
                     </div>
                     <div class="conference">British Machine Vision Conference (BMVC), 2015</div>
                     <div class="authors">

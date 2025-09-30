@@ -37,7 +37,8 @@ a {
 .section .content {
     margin-bottom: 2em;
 }
-.section .image img {
+.section .image img,
+.section .image video {
     width: 100%;
 }
 #profile-photo img {
