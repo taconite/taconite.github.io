@@ -20,7 +20,7 @@
             <div class="row">
                 <div class="image" id="profile-photo">
                     <a>
-                    <img alt="Profile photo" src="figures/me.jpeg" />
+                    <img alt="Profile photo" src="figures/me2025.JPG" />
                     </a>
                 </div>
                 <div class="content">
@@ -55,6 +55,74 @@
                 <span>Publications</span>
             </div>
             <!-- start publication list -->
+            <div class="row paper">
+                <div class="image">
+                    <img src="teasers/SVPP_teaser.gif" alt="Lifting Unlabeled Internet-level Data for 3D Scene Understanding" style="max-height: 150px; object-fit: contain;" />
+                </div>
+                <div class="content">
+                    <div class="paper-title">
+                	<a href="https://sv-pp.github.io/">Lifting Unlabeled Internet-level Data for 3D Scene Understanding</a>
+                    </div>
+                    <div class="conference">IEEE Conf. on Computer Vision and Pattern Recognition (CVPR), 2026</div>
+                    <div class="authors">
+                        <a href="https://yixchen.github.io/" class="author">Yixin Chen</a>, Yaowei Zhang, Huangyue Yu, Junchao He, Yan Wang, <a href="https://huangjy-pku.github.io/" class="author">Jiangyong Huang</a>, Hongyu Shen, <a href="https://dali-jack.github.io/Junfeng-Ni/" class="author">Junfeng Ni</a>, <strong class="author">Shaofei Wang</strong>, <a href="https://buzz-beater.github.io/" class="author">Baoxiong Jia</a>, <a href="https://zhusongchun.net/" class="author">Song-Chun Zhu</a>, <a href="https://siyuanhuang.com/" class="author">Siyuan Huang</a>
+                    </div>
+                    <div class="links">
+                        <a href="#" data-type="Short" data-index="0">Abstract</a>
+                        <a href="https://sv-pp.github.io/" data-type="Long">Project page</a>
+                        <a href="https://sv-pp.github.io/assets/CVPR26_SVPP.pdf" data-type="Short">Paper</a>
+                        <a href="https://github.com/sv-pp/SceneVersepp" data-type="Short">Code</a>
+                        <a href="#" data-index="4" data-type="Short">Bibtex</a>
+                        <div class="link-content" data-index="0">
+                            Annotated 3D scene data is scarce and expensive to acquire, while abundant unlabeled videos are readily available on the internet. In this paper, we demonstrate that carefully designed data engines can leverage web-unlabeled videos to automatically generate training data, to facilitate end-to-end models in 3D scene understanding alongside human-annotated datasets. We identify and analyze bottlenecks in automated data generation, revealing critical factors that determine the efficiency and effectiveness of learning from unlabeled data. To validate our approach across different perception granularities, we evaluate on three tasks spanning low-level perception, i.e., 3D object detection and instance segmentation, to high-level reasoning, i.e., 3D spatial Visual Question Answering (VQA) and Vision-Language Navigation (VLN). Models trained on our generated data demonstrate strong zero-shot performance and show further improvement after finetuning. This demonstrates the viability of leveraging readily available web data as a path toward more capable scene understanding systems.
+                        </div>
+                        <div class="link-content" data-index="4">
+<pre>
+@inproceedings{Chen2026CVPR,
+  title = {Lifting Unlabeled Internet-level Data for 3D Scene Understanding},
+  author = {Yixin Chen and Yaowei Zhang and Huangyue Yu and Junchao He and Yan Wang and Jiangyong Huang and Hongyu Shen and Junfeng Ni and Shaofei Wang and Baoxiong Jia and Song-Chun Zhu and Siyuan Huang},
+  booktitle = {IEEE Conf. on Computer Vision and Pattern Recognition (CVPR)},
+  year = {2026}
+}
+</pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row paper">
+                <div class="image">
+                    <img src="teasers/NTS_teaser.png" alt="Neural Texture Splatting" style="max-height: 150px; object-fit: contain;" />
+                </div>
+                <div class="content">
+                    <div class="paper-title">
+                	<a href="https://19reborn.github.io/nts/">Neural Texture Splatting: Expressive 3D Gaussian Splatting for View Synthesis, Geometry, and Dynamic Reconstruction</a>
+                    </div>
+                    <div class="conference">ACM SIGGRAPH Asia Conference Papers, 2025</div>
+                    <div class="authors">
+                        <a href="https://19reborn.github.io/" class="author">Yiming Wang</a>, <strong class="author">Shaofei Wang</strong>, <a href="https://markomih.github.io/" class="author">Marko Mihajlovic</a>, <a href="https://vlg.inf.ethz.ch/team/Prof-Dr-Siyu-Tang.html" class="author">Siyu Tang</a>
+                    </div>
+                    <div class="links">
+                        <a href="#" data-type="Short" data-index="0">Abstract</a>
+                        <a href="https://19reborn.github.io/nts/" data-type="Long">Project page</a>
+                        <a href="https://arxiv.org/abs/2511.18873" data-type="Short">Paper</a>
+                        <a href="https://github.com/19reborn/neural-texture-splatting" data-type="Short">Code</a>
+                        <a href="#" data-index="4" data-type="Short">Bibtex</a>
+                        <div class="link-content" data-index="0">
+                            3D Gaussian Splatting (3DGS) has emerged as a leading approach for high-quality novel view synthesis, with numerous variants extending its applicability to a broad spectrum of 3D and 4D scene reconstruction tasks. Despite its success, the representational capacity of 3DGS remains limited by the use of 3D Gaussian kernels to model local variations. Recent works have proposed to augment 3DGS with additional per-primitive capacity, such as per-splat textures, to enhance its expressiveness. However, these per-splat texture approaches primarily target dense novel view synthesis with a reduced number of Gaussian primitives, and their effectiveness tends to diminish when applied to more general reconstruction scenarios. In this paper, we aim to achieve concrete performance improvement over state-of-the-art 3DGS variants across a wide range of reconstruction tasks, including novel view synthesis, geometry and dynamic reconstruction, under both sparse and dense input settings. To this end, we introduce Neural Texture Splatting (NTS). At the core of our approach is a global neural field (represented as a hybrid of a tri-plane and a neural decoder) that predicts local appearance and geometric fields for each primitive. By leveraging this shared global representation that models local texture fields across primitives, we significantly reduce model size and facilitate efficient global information exchange, demonstrating strong generalization across tasks. Furthermore, our neural modeling of local texture fields introduces expressive view- and time-dependent effects, a critical aspect that existing methods fail to account for. Extensive experiments show that Neural Texture Splatting consistently improves models and achieves state-of-the-art results across multiple benchmarks.
+                        </div>
+                        <div class="link-content" data-index="4">
+<pre>
+@inproceedings{Wang2025SIGGRAPHAsia,
+  title = {Neural Texture Splatting: Expressive 3D Gaussian Splatting for View Synthesis, Geometry, and Dynamic Reconstruction},
+  author = {Yiming Wang and Shaofei Wang and Marko Mihajlovic and Siyu Tang},
+  booktitle = {ACM SIGGRAPH Asia Conference Papers},
+  year = {2025}
+}
+</pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="row paper">
                 <div class="image">
                     <img src="teasers/DNF-Avatar.png" alt="DNF-Avatar: Distilling Neural Fields for Real-time Animatable Avatar Relighting" style="max-height: 150px; object-fit: contain;" />
