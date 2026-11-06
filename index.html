@@ -57,6 +57,110 @@
             <!-- start publication list -->
             <div class="row paper">
                 <div class="image">
+                    <img src="teasers/ADELE_teaser.png" alt="ADELE: Adaptive Delaunay Grids for High-Fidelity Mesh-Native Reconstruction" style="max-height: 150px; object-fit: contain;" />
+                </div>
+                <div class="content">
+                    <div class="paper-title">
+                	<a href="https://johannes-weidenfeller.github.io/adele">ADELE - Adaptive Delaunay Grids for High-Fidelity Mesh-Native Reconstruction</a>
+                    </div>
+                    <div class="conference">ACM SIGGRAPH Asia Conference Papers, 2026</div>
+                    <div class="authors">
+                        <a href="https://vlg.inf.ethz.ch/team/Johannes-Weidenfeller.html" class="author">Johannes Weidenfeller</a>, <strong class="author">Shaofei Wang</strong>, <a href="https://health.dsi.uzh.ch/member/philipp-furnsthal/" class="author">Philipp Fürnstahl</a>, <a href="https://vlg.inf.ethz.ch/team/Prof-Dr-Siyu-Tang.html" class="author">Siyu Tang</a>
+                    </div>
+                    <div class="links">
+                        <a href="#" data-type="Short" data-index="30">Abstract</a>
+                        <a href="https://johannes-weidenfeller.github.io/adele" data-type="Long">Project page</a>
+                        <a href="https://arxiv.org/abs/2609.06723" data-type="Short">Paper</a>
+                        <a href="https://github.com/johannes-weidenfeller/adele" data-type="Short">Code</a>
+                        <a href="#" data-index="34" data-type="Short">Bibtex</a>
+                        <div class="link-content" data-index="30">
+                            Meshes remain the most practical representation for geometry reasoning and integration into graphics pipelines, yet existing reconstruction methods struggle to produce high-quality meshes. Most state-of-the-art approaches initially learn an intermediate representation (NeRF/3DGS) and treat mesh extraction as a post-processing step, which often leads to oversmoothed surfaces or poor quality meshes with excessive triangle counts. Existing mesh-native optimization methods alleviate some of these issues but suffer from fixed-resolution discretizations and unstable optimization behavior. In this paper, we introduce an adaptive mesh-based optimization framework and a practical mesh rendering technique to address these challenges. Our representation combines an optimizable Delaunay-triangulated tetrahedral grid with a multi-resolution hash grid. The former is refined through point pruning and insertion, while the latter provides latent features for SDF/appearance value predictions. We use volumetric rendering to bootstrap a coarse geometry while leveraging mesh-based rendering for recovering fine-grained details. Additionally, we propose a differentiable, rasterization-based depth-offset rendering formulation, reducing geometric artifacts and improving reconstruction quality. Our method significantly outperforms existing mesh optimization approaches across a variety of object-centric benchmarks while being competitive with state-of-the-art NeRF/3DGS methods. Code and additional results are available on our project page.
+                        </div>
+                        <div class="link-content" data-index="34">
+<pre>
+@inproceedings{Weidenfeller2026SIGGRAPHAsia,
+  title = {ADELE - Adaptive Delaunay Grids for High-Fidelity Mesh-Native Reconstruction},
+  author = {Johannes Weidenfeller and Shaofei Wang and Philipp F{\"u}rnstahl and Siyu Tang},
+  booktitle = {ACM SIGGRAPH Asia Conference Papers},
+  year = {2026}
+}
+</pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row paper">
+                <div class="image">
+                    <img src="teasers/UniFusion_teaser.png" alt="UniFusion: Sparse-View 4D Reconstruction via Unified Spatio-temporal Depth Alignment" style="max-height: 150px; object-fit: contain;" />
+                </div>
+                <div class="content">
+                    <div class="paper-title">
+                	<a href="https://yongzhelyu.github.io/UniFusion">UniFusion: Sparse-View 4D Reconstruction via Unified Spatio-temporal Depth Alignment</a>
+                    </div>
+                    <div class="conference">European Conference on Computer Vision (ECCV), 2026</div>
+                    <div class="authors">
+                        <a href="https://yongzhelyu.github.io/" class="author">Yongzhe Lyu</a>*, <strong class="author">Shaofei Wang</strong>*, <a href="https://yixchen.github.io/" class="author">Yixin Chen</a>, <a href="https://siyuanhuang.com/" class="author">Siyuan Huang</a>
+                        <br><span style="font-size: 10pt; font-style: italic;">* Equal contribution</span>
+                    </div>
+                    <div class="links">
+                        <a href="#" data-type="Short" data-index="40">Abstract</a>
+                        <a href="https://yongzhelyu.github.io/UniFusion" data-type="Long">Project page</a>
+                        <a href="https://arxiv.org/abs/2609.05888" data-type="Short">Paper</a>
+                        <a href="https://github.com/YongzheLyu/UniFusion" data-type="Short">Code</a>
+                        <a href="#" data-index="44" data-type="Short">Bibtex</a>
+                        <div class="link-content" data-index="40">
+                            In this paper, we address the challenging problem of 4D reconstruction from sparse-view videos. This setup usually relies on monocular depth estimation to provide priors for the reconstruction model. A key challenge arises from limited cross-view overlap and temporal variation, making monocular depth predictions inconsistent across views and time. Existing methods align spatial and temporal dimensions in separate stages, requiring foreground segmentation masks while failing to leverage temporal cues for cross-view alignment. Contrary to these methods, we propose a unified spatial-temporal depth alignment framework that jointly resolves cross-view and cross-time inconsistencies without distinguishing foreground/background. Our method represents depth maps across views and time as a set of spatio-temporal neural fields. This representation not only yields fast convergence, but also captures spatio-temporal correlation among depth maps implicitly, without dependence on external segmentation/tracking models. We also propose a multi-view depth-order loss while leveraging the classic scale-and-shift-invariant loss to further improve the final depth quality. The aligned depths initialize and supervise Gaussian splatting models for 4D reconstruction. Experiments on Ego-Exo4D and EgoHuman demonstrate that our improved depth alignment substantially benefits dynamic Gaussian-splatting-based reconstruction methods for novel-time/view synthesis and geometry accuracy/consistency.
+                        </div>
+                        <div class="link-content" data-index="44">
+<pre>
+@inproceedings{Lyu2026ECCV,
+  title = {UniFusion: Sparse-View 4D Reconstruction via Unified Spatio-temporal Depth Alignment},
+  author = {Yongzhe Lyu and Shaofei Wang and Yixin Chen and Siyuan Huang},
+  booktitle = {European Conference on Computer Vision (ECCV)},
+  year = {2026}
+}
+</pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row paper">
+                <div class="image">
+                    <img src="teasers/EgoProx_teaser.png" alt="EgoProx: Evaluating MLLMs on Egocentric 3D Proximity Reasoning Across a Cognitive Hierarchy" style="max-height: 150px; object-fit: contain;" />
+                </div>
+                <div class="content">
+                    <div class="paper-title">
+                	<a href="https://lijinzhao30.github.io/Egoprox/">EgoProx: Evaluating MLLMs on Egocentric 3D Proximity Reasoning Across a Cognitive Hierarchy</a>
+                    </div>
+                    <div class="conference">IEEE Conf. on Computer Vision and Pattern Recognition (CVPR), 2026</div>
+                    <div class="authors">
+                        Jinzhao Li, Yinuo Chen, Dongxu Piao, Panwang Pan, Yifan Yu, Dong Wang, Honglei Yan, Liang Yue, <strong class="author">Shaofei Wang</strong>, <a href="https://yixchen.github.io/" class="author">Yixin Chen</a>, <a href="https://siyuanhuang.com/" class="author">Siyuan Huang</a>, Miao Liu
+                    </div>
+                    <div class="links">
+                        <a href="#" data-type="Short" data-index="50">Abstract</a>
+                        <a href="https://lijinzhao30.github.io/Egoprox/" data-type="Long">Project page</a>
+                        <a href="https://arxiv.org/abs/2605.24456" data-type="Short">Paper</a>
+                        <a href="https://github.com/lijinzhao30/Egoprox" data-type="Short">Code</a>
+                        <a href="https://huggingface.co/datasets/lijinzhao30/EgoProx" data-type="Short">Dataset</a>
+                        <a href="#" data-index="54" data-type="Short">Bibtex</a>
+                        <div class="link-content" data-index="50">
+                            Humans constantly reason about 3D proximity, the relations between their body and surrounding objects, to guide perception and action in daily life. Whether multimodal large language models (MLLMs) can perform such embodied 3D reasoning remains unclear. To this end, we introduce EgoProx, a benchmark for egocentric 3D proximity reasoning. We organize our tasks along a cognitive chain, covering intention, exploration, exploitation, and chain-of-actions reasoning. We also design an agent based data engine that produces diverse and consistent QA pairs at scale. We benchmark prevailing MLLMs on EgoProx and conduct additional analyses with dataset specific and task specific instruction tuning. We observe large cross-domain gains, indicating that current MLLMs contain some spatial knowledge; however, they still struggle to effectively leverage it for spatial reasoning VQA.
+                        </div>
+                        <div class="link-content" data-index="54">
+<pre>
+@inproceedings{Li2026CVPR,
+  title = {EgoProx: Evaluating MLLMs on Egocentric 3D Proximity Reasoning Across a Cognitive Hierarchy},
+  author = {Jinzhao Li and Yinuo Chen and Dongxu Piao and Panwang Pan and Yifan Yu and Dong Wang and Honglei Yan and Liang Yue and Shaofei Wang and Yixin Chen and Siyuan Huang and Miao Liu},
+  booktitle = {IEEE Conf. on Computer Vision and Pattern Recognition (CVPR)},
+  year = {2026}
+}
+</pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row paper">
+                <div class="image">
                     <img src="teasers/SVPP_teaser.gif" alt="Lifting Unlabeled Internet-level Data for 3D Scene Understanding" style="max-height: 150px; object-fit: contain;" />
                 </div>
                 <div class="content">
